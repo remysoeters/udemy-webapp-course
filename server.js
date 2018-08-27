@@ -10,12 +10,12 @@ app.set('view engine', 'hbs')
 
 app.use(express.static(__dirname + '/public'))
 
-app.use((req, res, next)=>{
-    res.render('maintainance.hbs', {
-        pageTitle: 'Maintainance',
-        pageMessage:'This page is currently under construction, we will be back shortly'
-    })
-})
+// app.use((req, res, next)=>{
+//     res.render('maintainance.hbs', {
+//         pageTitle: 'Maintainance',
+//         pageMessage:'This page is currently under construction, we will be back shortly'
+//     })
+// })
 
 app.use((req, res, next)=>{
 
